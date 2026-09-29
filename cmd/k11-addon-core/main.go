@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	addon := k11.NewAddon("core", k11.Name("Core Addon"), k11.Version("1.0.2"))
+	addon := k11.NewAddon("core", k11.Name("Core Addon"), k11.Version("1.0.3"))
 
 	k11.Register(addon, "core.delay", k11.Node{Name: "Delay"}, &executors.DelayExecutor{})
 	k11.Register(addon, "core.log", k11.Node{Name: "Log"}, &executors.LogExecutor{})

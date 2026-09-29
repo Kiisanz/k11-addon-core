@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "core",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "category": "system",
   "repository": "Kiisanz/k11-addon-core",
   "buildConfig": {
@@ -16,9 +16,11 @@
     {
       "os": "linux",
       "arch": "amd64",
-      "url": "https://github.com/Kiisanz/k11-addon-core/releases/download/v1.0.2/core-linux-amd64.tar.gz",
-      "sha256": "04f0bbbb3b341198aec48ffaab2737dde85e7b3a8127e5fa8cf6594bb5f63fa7",
-      "size": 2633564
+      "url": "https://github.com/Kiisanz/k11-addon-core/releases/download/v1.0.3/core-linux-amd64.tar.gz",
+      "sha256": "6fa367c94007c2ab03b10ceaf451b9c359de0c9a8b839661d32b7dee50dc5bd1",
+      "size": 2633563,
+      "format": "tar.gz",
+      "executable": "core-linux-amd64"
     }
   ]
 }
