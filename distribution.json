@@ -8,21 +8,19 @@
     "entrypoint": "./cmd/k11-addon-core"
   },
   "api": {
-    "arch": [
-      "amd64"
-    ],
-    "manifestVersion": "1",
-    "os": [
-      "linux"
-    ]
+    "addonApi": "v1",
+    "editorSchemaVersion": 1,
+    "minAgentVersion": "0.1.0"
   },
   "assets": [
     {
       "os": "linux",
       "arch": "amd64",
       "url": "https://github.com/Kiisanz/k11-addon-core/releases/download/v1.0.0/core-linux-amd64.tar.gz",
-      "sha256": "a435f07036662d080bd565427a4f12e9dcd6038489e3b901a1ce4529dbb2030a",
-      "size": 2634799
+      "sha256": "fafd40f56d1d065ee52c4ef550a3193af020d59dff687d085abbebe1213f485b",
+      "size": 2578452,
+      "format": "tar.gz",
+      "executable": "core"
     }
   ]
 }
