@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Kiisanz/k11-addon-sdk/distribution"
+	"github.com/Kiisanz/k11-addon-sdk/pkg/distribution"
 )
 
 func TestDistributionManifestSchema(t *testing.T) {

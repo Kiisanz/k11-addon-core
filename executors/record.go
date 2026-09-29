@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/Kiisanz/k11-addon-sdk/addonapi"
+	"github.com/Kiisanz/k11-addon-sdk/pkg/addonapi"
 )
 
 // RecordBuilderExecutor converts resolved named fields into the generic record type.

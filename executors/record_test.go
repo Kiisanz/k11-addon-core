@@ -1,7 +1,7 @@
 package executors
 
 import (
-	"github.com/Kiisanz/k11-addon-sdk/addonapi"
+	"github.com/Kiisanz/k11-addon-sdk/pkg/addonapi"
 	"testing"
 )
 
