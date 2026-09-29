@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/aras/k11/apps/addons/core/executors"
+	"github.com/Kiisanz/k11-addon-core/executors"
 	k11 "github.com/Kiisanz/k11-addon-sdk"
 )
 
