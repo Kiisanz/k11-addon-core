@@ -1,0 +1,38 @@
+name: Release Core Addon
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Test
+        run: GOWORK=off go test -race ./...
+
+      - name: Build and Package
+        run: ./build_release.sh "${{ github.ref_name }}"
+
+      - name: Verify Distribution Artifact
+        run: VERIFY_ARTIFACTS=1 GOWORK=off go test -race -run TestDistributionArtifact
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            dist/core-linux-amd64.tar.gz
+            distribution.json
+          generate_release_notes: true
